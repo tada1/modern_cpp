@@ -30,5 +30,6 @@ void Circle::print() const
 {
     std::cout << "Circle: radius: " << getRadius() << std::endl
               << "          area: " << getArea() << std::endl
-              << "     perimeter: " << getPerimeter() << std::endl;
+              << "     perimeter: " << getPerimeter() << std::endl
+              <<std::endl;
 }
