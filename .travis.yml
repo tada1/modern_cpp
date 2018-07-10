@@ -1,6 +1,5 @@
 language: cpp
 compiler: 
-    - clang
     - gcc
 adons:
     apt:
@@ -8,9 +7,7 @@ adons:
             -ubuntu-toolchain-r-test
         packages:
             - g++-7.3
-            - clang-6.0
 install:
     - "[ $CXX = g++ ] && export CXX=g++-7.3 || true"
-    - "[ $CXX = clang++ ] && export CXX=clang++-6.0 || true"
 script:
     make

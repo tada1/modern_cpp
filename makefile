@@ -1,5 +1,4 @@
 CXX=g++
-STD=-std=c++14
 CXXFLAGS=-Wall -Wextra -Werror -Wpedantic -o
 SOURCES= *.cpp
 
