@@ -10,4 +10,4 @@ adons:
 install:
     - "[ $CXX = g++ ] && export CXX=g++-7.3 || true"
 script:
-    make
+    make modern
