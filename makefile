@@ -1,6 +1,6 @@
 #veriables
 CXX	=	g++
-STD	=	-std=c++14
+STD	=	-std=c++11
 CXXFLAGS	=	-Wall -Wextra -Wpedantic
 SRCS	=	*.cpp
 OBJECTS	=	$(SRCS:.cpp=.o)
