@@ -1,12 +1,14 @@
-CXX=g++
-CXXFLAGS=-Wall -Wextra -Werror -Wpedantic -o
-SOURCES= *.cpp
+#veriables
+CXX	=	g++
+STD	=	-std=c++14
+CXXFLAGS	=	-Wall -Wextra -Wpedantic
+SRCS	=	*.cpp
+OBJECTS	=	$(SRCS:.cpp=.o)
 
-modern: $(SOURCES)
-	$(CXX) $(SOURCES) $(STD) $(CXXFLAGS) $@ -g
 
-modernRelaese: $(SOURRCES)
-	$(CXX) $(SOURCES) $(STD) $(CXXFLAGS) $@ -O3
-
+modern: $(SRCS)
+	$(CXX) $(STD) $(SRCS) $(CXXFLAGS) -O3 -o $@
+modernDebug: $(SRCS)
+	$(CXX) $(STD) $(SRCS) $(CXXFLAGS) -g -o $@
 clean:
-	rm *.o
+	rm modern modernDebug
